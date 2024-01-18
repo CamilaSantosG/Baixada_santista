@@ -1,6 +1,4 @@
-a{
-    color: aliceblue;
-}
+
 
 body:not(.voltar) {
     background-color: antiquewhite;
@@ -11,14 +9,26 @@ body:not(.voltar) {
     
 }
 
-.voltar{
-    background-color: #086331;
-    border-top: 5px solid #086331;
-    border-right: 20px solid #086331;
-    border-bottom: 5px solid #086331;
-    border-left: 20px solid #086331;
-    
+.margem{
+    text-align: center;
+    background-color: #3e5db4;
+    border-top: 20px solid #3e5db4;
+    border-right: 30px solid #3e5db4;
+    border-bottom: 20px solid #3e5db4;
+    border-left: 30px solid #3e5db4;
 }
+
+.voltar{
+    font-size: 13px;
+}
+
+.proximo{
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+
+
 
 .text-container {
     
@@ -46,7 +56,46 @@ body:not(.voltar) {
     margin-right: 10%;
 }
 
+h3, h2, p{
+    margin-left: 3%;
+    margin-right: 3%;
+    }
+
 h3{
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+a {
+    text-decoration: none;
+    font-size: 12px; /* Tamanho da fonte inicial */
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+    color: #000; /* Cor do texto normal */
+}
+
+a:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+    font-size: 15px; /* Tamanho da fonte ao passar o mouse */
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0); 
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
