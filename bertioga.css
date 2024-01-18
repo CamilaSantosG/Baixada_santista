@@ -6,6 +6,7 @@ body:not(.voltar) {
     position: relative;
     margin: 0;
     padding: 0;
+    margin-bottom: 20px;
     
 }
 
@@ -32,7 +33,7 @@ body:not(.voltar) {
 
 .text-container {
     
-    background-image: url('imagens/cidades/bertioga.jpg'); 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('imagens/cidades/bertioga.jpg'); 
     background-size: cover;
     background-position: center;
     color: white; 
@@ -56,13 +57,15 @@ body:not(.voltar) {
     margin-right: 10%;
 }
 
-h3, h2, p{
-    margin-left: 3%;
-    margin-right: 3%;
+    h2{
+        font-size: 40px;
+        text-align: center;
+        text-decoration: underline rgb(18, 27, 150);
     }
 
+
 h3{
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -70,16 +73,16 @@ h3{
 
 a {
     text-decoration: none;
-    font-size: 12px; /* Tamanho da fonte inicial */
+    font-size: 12px;
     position: relative;
     transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
-    color: #000; /* Cor do texto normal */
+    color: #000; 
 }
 
 a:hover {
-    transform: scale(1.1); /* Aumenta o tamanho em 10% */
-    color: #ffffff; /* Cor do texto ao passar o mouse */
-    font-size: 15px; /* Tamanho da fonte ao passar o mouse */
+    transform: scale(1.1); 
+    color: #ffffff;
+    font-size: 16px;
 }
 
 a::after {
@@ -99,3 +102,30 @@ a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.conf{
+    display: flex;
+    align-items: center;
+}
+
+.conf img{
+    max-width: 43%; 
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.conftexto{
+    flex: 1; 
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.conftexto p{
+    font-size: 15px;
+}
+
+.ultimo{
+    margin-bottom: 10%;
+}
+
+
