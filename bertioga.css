@@ -1,0 +1,52 @@
+a{
+    color: aliceblue;
+}
+
+body:not(.voltar) {
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.voltar{
+    background-color: #086331;
+    border-top: 5px solid #086331;
+    border-right: 20px solid #086331;
+    border-bottom: 5px solid #086331;
+    border-left: 20px solid #086331;
+    
+}
+
+.text-container {
+    
+    background-image: url('imagens/cidades/bertioga.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    text-align: center;
+    padding: 9%;
+    
+}
+
+.text-container h1{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 36px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+}
+
+.text-container p{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
