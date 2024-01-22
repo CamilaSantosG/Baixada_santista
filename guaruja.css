@@ -9,11 +9,11 @@ body:not(.voltar) {
 
 .margem{
     text-align: center;
-    background-color: #a2bd0c;
-    border-top: 25px solid #a2bd0c;
-    border-right: 5px solid #a2bd0c;
-    border-bottom: 25px solid #a2bd0c;
-    border-left: 5px solid #a2bd0c;
+    background-color: #367dad;
+    border-top: 25px solid #367dad;
+    border-right: 5px solid #367dad;
+    border-bottom: 25px solid #367dad;
+    border-left: 5px solid #367dad;
 }
 
 .voltar, .anterior{
